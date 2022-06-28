@@ -4,5 +4,5 @@ Developed a file server program that hosts files for clients. It receives files 
 
 # run the program
 
-SERVER PROGRAM \n
-In a terminal window, run to `make`
+To build the Server program, in a terminal window, run `make`. Then, run `./build/bin/release/server --hostname 127.0.0.1:8080`. 
+To build the Client program, in another terminal window, run `make`. Then, to send a file, run `./build/bin/release/client --hostname 127.0.0.1:8080 --send files/document.txt`. To receive a file, run `./build/bin/release/client --hostname 127.0.0.1:8080 --request document.txt`.
